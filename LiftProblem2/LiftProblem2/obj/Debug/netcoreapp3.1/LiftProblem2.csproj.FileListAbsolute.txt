@@ -1,0 +1,13 @@
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\bin\Debug\netcoreapp3.1\LiftProblem2.exe
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\bin\Debug\netcoreapp3.1\LiftProblem2.deps.json
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\bin\Debug\netcoreapp3.1\LiftProblem2.runtimeconfig.json
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\bin\Debug\netcoreapp3.1\LiftProblem2.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\bin\Debug\netcoreapp3.1\LiftProblem2.dll
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\bin\Debug\netcoreapp3.1\LiftProblem2.pdb
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\obj\Debug\netcoreapp3.1\LiftProblem2.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\obj\Debug\netcoreapp3.1\LiftProblem2.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\obj\Debug\netcoreapp3.1\LiftProblem2.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\obj\Debug\netcoreapp3.1\LiftProblem2.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\obj\Debug\netcoreapp3.1\LiftProblem2.dll
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\obj\Debug\netcoreapp3.1\LiftProblem2.pdb
+C:\Users\lenovo\source\repos\LiftProblem2\LiftProblem2\obj\Debug\netcoreapp3.1\LiftProblem2.genruntimeconfig.cache
