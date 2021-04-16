@@ -1,22 +1,49 @@
 ﻿using Lift.Enums;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Lift.Entities
 {
     public class Lift
     {
+        public delegate void LiftArrivedAtAFloor(int floorNumber);
+        public event LiftArrivedAtAFloor LiftArriverAtAFloor;
         public int Capacity { get; set; }
         public List<Person> People { get; set; }
         public int CurrentFloor { get; set; }
-       // public Direction Direction { get; set; }
+       public Direction LiftDirection { get; set; }
 
         public Lift(int capacity)
         {
             this.CurrentFloor = 0;
             this.Capacity = capacity;
-            
+            this.LiftDirection = Direction.Stationary;
+        }
+
+
+        public void Start()
+        {
+            this.LiftDirection = Direction.GoingUp;
+            this.LiftArriverAtAFloor(this.CurrentFloor);
+        }
+
+        public void OnboardPeople(List<Person> people)
+        {
+            this.People.AddRange(people);
+        }
+
+        public List<Person> OffboardPeople(int floorNumber)
+        {
+            var peopleToOffboard = this.People.Where(p => p.DestinationFloor == floorNumber).ToList();
+            this.People = this.People.Where(p => p.DestinationFloor != floorNumber).ToList();
+            return peopleToOffboard;
+        }
+
+        public int GetAvailableCapacity()
+        {
+            return this.Capacity - this.People.Count;
         }
         //if current floor is not top floor , lift can move up
         public  void MoveUp()
@@ -46,9 +73,17 @@ namespace Lift.Entities
             }
             else return false;
         }
+        public void EnterInTheLift()//person enters the lift if lift is not full
+        {
+            if(!IsFull())
+            {
+                //code to add person to the lift.
+            }
+            else
+            {
+                Console.WriteLine("Alert alarm: Lift is full");
+            }
+        }
     }
-    public void EnterInTheLift()
-    {
-
-    }
+    
 }

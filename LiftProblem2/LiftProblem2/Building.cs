@@ -5,11 +5,12 @@ namespace Lift.Entities
 {
     public class Building
     {
-        public Floor[] Floors { get; set; }
+        public static Floor[] Floors { get; set; }
 
         public Lift Lift { get; set; }
 
         public Building(int liftCapacity, int[][] floorAndPeopleComposition)
+
         {
             Floors = floorAndPeopleComposition.Select((floorComposition, floorNumber) =>
             {
@@ -24,18 +25,34 @@ namespace Lift.Entities
         public void LiftRequested(Direction direction, int floorNumberRequestedOn)
         {
 
-            if(direction== Direction.GoingUp)
+
+            //if lift's direction is upwards the lift will move up untill it serves all the people from top.
+
+            if (direction == Direction.GoingUp)
             {
+                while (floorNumberRequestedOn < Person.CurrentFloor)
+                {
+
+
+
+                    Lift.MoveUp();
+
+
+                }
+            }
+
+            //if lift's direction is downwards the lift will move down untill it serves all the people from bottom.
+
+            else if (direction == Direction.GoingDown)
+            {
+                while (floorNumberRequestedOn < Person.CurrentFloor)
+                {
+
+                    Lift.MoveDown();
+                }
+            }
                 
-                Lift.MoveUp();
             }
-
-            if(direction== Direction.GoingDown)
-            {
-                Lift.MoveDown();
-            }
-
 
         }
     }
-}

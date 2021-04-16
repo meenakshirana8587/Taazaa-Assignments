@@ -8,7 +8,7 @@ namespace Lift.Entities
 
         public event ButtonPressedForCallingTheLift ButtonPressed;
 
-        public int CurrentFloor { get; set; }
+        public static int CurrentFloor { get; set; }
         public int DestinationFloor { get; set; }
 
         public WaitingStatus WaitingStatus { get; set; }
@@ -23,14 +23,27 @@ namespace Lift.Entities
 
         public Person(int currentFloor, int destinationFloor)
         {
-            this.CurrentFloor = currentFloor;
-            this.DestinationFloor = destinationFloor;
-            this.WaitingStatus = WaitingStatus.Waiting;
+            CurrentFloor = currentFloor;
+            DestinationFloor = destinationFloor;
+            WaitingStatus = WaitingStatus.Waiting;
         }
 
         public void PressButton()
         {
             this.ButtonPressed(this.DirectionToGoIn);
+        }
+
+
+        
+
+        public void SetReached()
+        {
+            this.WaitingStatus = WaitingStatus.Reached;
+        }
+
+        public void SetOnboard()
+        {
+            this.WaitingStatus = WaitingStatus.BoardedLift;
         }
     }
 }
