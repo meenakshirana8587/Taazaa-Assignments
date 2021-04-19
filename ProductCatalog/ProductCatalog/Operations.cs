@@ -12,25 +12,17 @@ namespace ProductCatalog
         public Category Category;
 
         public static List<Category> Categories = new List<Category>();
-        UserInputs ui = new UserInputs();
+        public static List<Product> Products = new List<Product>();
+       
             
 
 
 
 
-        //private int generateCategoryId()
-        //{
-        //    CategoryId = CategoryId + 1;
-        //    return CategoryId;
-        //}
-        public static int CategoryId;
+        
+        
 
-        //public static int generateCategoryId()
-        //{
-        //    CategoryId = CategoryId + 1;
-
-        //    return CategoryId;
-        //}
+        
 
         
 
@@ -63,7 +55,7 @@ namespace ProductCatalog
 
 
 
-            Console.WriteLine(Categories.Count);
+            //Console.WriteLine(Categories.Count);
             
             
         }
@@ -127,7 +119,106 @@ namespace ProductCatalog
         {
             
         }
-        
+
+
+        public void AddProduct()
+        {
+
+
+            Product product = new Product();
+
+
+
+            Console.WriteLine(" Id : " + product.Id + "\t");
+
+            Console.WriteLine("Please enter product name: ");
+            product.Name = Console.ReadLine();
+
+
+            Console.WriteLine("Please enter a Shortcode for the product(max 4 characters): ");
+            product.ShortCode = Console.ReadLine();
+
+            Console.WriteLine("Please enter description: ");
+            product.Description = Console.ReadLine();
+
+
+            Console.WriteLine("Please enter product manufacturer: ");
+            product.Manufacturer = Console.ReadLine();
+
+            Console.WriteLine("Please enter product price: ");
+            product.SellingPrice = Convert.ToInt32(Console.ReadLine());
+
+
+            Products.Add(product);
+
+
+
+
+
+
+
+            
+
+
+        }
+        public void ListAllProducts()
+        {
+            Console.WriteLine("Id\t\tName\t\tShortCode\t\tDescription\t\tManufacturer\t\tPrice");
+            Console.WriteLine(" ");
+            foreach (var item in Products)
+            {
+                Console.WriteLine(item.Id + "\t\t" + item.Name + "\t\t" + item.ShortCode + "\t\t\t" + item.Description+ "\t\t"+ item.Manufacturer + "\t\t" + item.SellingPrice);
+            }
+        }
+        public void DeleteProduct()
+        {
+            Console.WriteLine("Enter product id to delete the product");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            Products.RemoveAt(id - 1);
+
+        }
+
+        public void SearchProduct()
+        {
+            Console.WriteLine("Please select an option to search");
+            Console.Write("1. search by Id\t");
+            Console.Write("2. search by Name\t");
+            Console.WriteLine("3. search by ShortCode");
+            Console.WriteLine(" ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+            if (choice == 1)
+            {
+                Console.WriteLine("Enter Id");
+                int id = Convert.ToInt32(Console.ReadLine());
+                var res = Products.Where(p => p.Id == id).ToList();
+                Console.WriteLine(" ");
+                res.ForEach(item => Console.WriteLine("Id: " + item.Id + "\t" + "Name: " + item.Name + "\t" + "ShortCode: " + item.ShortCode + "\t" + "Description: " + item.Description + "Manufacturer: "+ item.Manufacturer + "Price: "+ item.SellingPrice));
+            }
+            if (choice == 3)
+            {
+                Console.WriteLine("Enter ShortCode");
+                string code = (Console.ReadLine().ToLower());
+                var res = Products.Where(p => p.ShortCode.ToLower() == code).ToList();
+                Console.WriteLine(" ");
+                res.ForEach(item => Console.WriteLine("Id: " + item.Id + "\t" + "Name: " + item.Name + "\t" + "ShortCode: " + item.ShortCode + "\t" + "Description: " + item.Description + "Manufacturer: " + item.Manufacturer + "Price: " + item.SellingPrice));
+            }
+            if (choice == 2)
+            {
+                Console.WriteLine("Enter name");
+                string name = (Console.ReadLine().ToLower());
+                var res = Products.Where(p => p.Name.ToLower() == name).ToList();
+                Console.WriteLine(" ");
+                res.ForEach(item => Console.WriteLine("Id: " + item.Id + "\t" + "Name: " + item.Name + "\t" + "ShortCode: " + item.ShortCode + "\t" + "Description: " + item.Description + "Manufacturer: " + item.Manufacturer + "Price: " + item.SellingPrice));
+            }
+
+
+        }
+        public void exitProduct()
+        {
+           
+        }
 
     }
 }

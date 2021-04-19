@@ -7,12 +7,25 @@ namespace ProductCatalog
         static void Main(string[] args)
         {
             
+            
 
 
 
             ManageOperationsBasedOnInputs manage = new ManageOperationsBasedOnInputs();
-            manage.categorySelected();
-            
+
+            UserInputs ui = new UserInputs();
+            int op = ui.selectAnOption();
+
+
+            while (op == 1)
+            {
+                manage.categorySelected();
+            }
+
+            while(ui.selectAnOption() == 2)
+            {
+                manage.productSelected();
+            }
 
 
             
