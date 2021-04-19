@@ -11,8 +11,7 @@ namespace ProductCatalog
 
 
             ManageOperationsBasedOnInputs manage = new ManageOperationsBasedOnInputs();
-            Category category = new Category();
-            manage.categorySelected(category);
+            manage.categorySelected();
             
 
 
