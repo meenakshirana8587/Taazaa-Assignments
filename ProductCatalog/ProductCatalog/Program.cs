@@ -14,17 +14,25 @@ namespace ProductCatalog
             ManageOperationsBasedOnInputs manage = new ManageOperationsBasedOnInputs();
 
             UserInputs ui = new UserInputs();
-            int op = ui.selectAnOption();
+            
 
-
-            while (op == 1)
+            while (true)
             {
-                manage.categorySelected();
-            }
+                int op = ui.selectAnOption();
 
-            while(op == 2)
-            {
-                manage.productSelected();
+                if (op == 1)
+                {
+                    manage.categorySelected();
+                }
+
+                else if(op == 2)
+                {
+                    manage.productSelected();
+                }
+                else if(op==3)
+                {
+                    Environment.Exit(1);
+                }
             }
 
 

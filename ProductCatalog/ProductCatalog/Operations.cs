@@ -66,7 +66,7 @@ namespace ProductCatalog
             Console.WriteLine(" ");
             foreach(var item in Categories)
             {
-                Console.WriteLine(item.Id + "\t\t" + item.Name + "\t\t" + item.ShortCode + "\t\t\t" + item.Description);
+                Console.WriteLine(item.Id + "\t\t" + item.Name + "\t\t" + item.ShortCode + "\t\t" + item.Description);
             }
         }
 
@@ -149,6 +149,22 @@ namespace ProductCatalog
             product.SellingPrice = Convert.ToInt32(Console.ReadLine());
 
 
+            product.Categories = new List<Category>();
+            string choice;
+            do
+            {
+                Console.WriteLine("Select Category By Id For Adding a Product");
+                int id = Convert.ToInt32(Console.ReadLine());
+                var data = Categories.Single((a) => a.Id == id);
+                if (data != null)
+                    product.Categories.Add(data);
+                Console.WriteLine("Do you want to add more catagories, yes to continue otherwise no:");
+                choice = Console.ReadLine();
+            } while (choice == "yes");
+
+
+
+
             Products.Add(product);
 
 
@@ -163,12 +179,18 @@ namespace ProductCatalog
         }
         public void ListAllProducts()
         {
-            Console.WriteLine("Id\t\tName\t\tShortCode\t\tDescription\t\tManufacturer\t\tPrice");
+            Console.WriteLine("Id\t\tName\t\tShortCode\t\tDescription\t\tManufacturer\t\tPrice\t\tCategories");
             Console.WriteLine(" ");
-            foreach (var item in Products)
+            Products.ForEach(item =>
             {
-                Console.WriteLine(item.Id + "\t\t" + item.Name + "\t\t" + item.ShortCode + "\t\t\t" + item.Description+ "\t\t"+ item.Manufacturer + "\t\t" + item.SellingPrice);
+                string s = "";
+                item.Categories.ForEach(c => {
+                    s += c.Name + ", ";
+                });
+                Console.WriteLine(item.Id + "\t\t" + item.Name + "\t\t" + item.ShortCode + "\t\t\t" + item.Description + "\t\t\t" + item.Manufacturer + "\t\t" + item.SellingPrice + "\t\t" + s);
+
             }
+            );
         }
         public void DeleteProduct()
         {

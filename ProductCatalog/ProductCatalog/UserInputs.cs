@@ -50,7 +50,8 @@ namespace ProductCatalog
             Console.Write("1. Enter a Product \t");
             Console.Write("2. List all Products \t");
             Console.Write("3. Delete a product \t");
-            Console.WriteLine("4. Search a product \t");
+            Console.Write("4. Search a product \t");
+            
            
             Console.WriteLine("Enter a number from above menu");
             int value = Convert.ToInt32(Console.ReadLine());
@@ -59,6 +60,11 @@ namespace ProductCatalog
                 Console.WriteLine("Invalid Operation");
             }
             return value;
+        }
+
+        public void exitApp()
+        {
+
         }
 
 
