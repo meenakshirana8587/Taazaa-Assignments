@@ -22,7 +22,7 @@ namespace ProductCatalog
                 manage.categorySelected();
             }
 
-            while(ui.selectAnOption() == 2)
+            while(op == 2)
             {
                 manage.productSelected();
             }
