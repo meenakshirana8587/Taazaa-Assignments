@@ -13,7 +13,8 @@ namespace ProductCatalog
 
         public static List<Category> Categories = new List<Category>();
         public static List<Product> Products = new List<Product>();
-         public void AddCategory()
+        public static List<string> allCode= new List<string>();
+        public void AddCategory()
         {
 
 
@@ -24,6 +25,7 @@ namespace ProductCatalog
             Console.WriteLine(" Id : " + category.Id + "\t");
             
             Console.WriteLine("Please enter category name: ");
+
             while (category.Name.Length < 1)
             {
                 Console.WriteLine("name is a required field ");
@@ -32,12 +34,49 @@ namespace ProductCatalog
             
             
             Console.WriteLine("Please enter a Shortcode for the category(max 4 characters): ");
-            while (category.ShortCode.Length < 1  || category.ShortCode.Length > 4)
+            while (category.ShortCode.Length < 1 || category.ShortCode.Length > 4)
             {
                 Console.WriteLine("short code is a required field and must be max of 4 characters");
                 category.ShortCode = Console.ReadLine();
             }
+            Boolean check = true;
+            while (check )
+            {
+               
+                
+                Boolean found = false;
+                if (allCode.Count == 0)
+                {
+                    allCode.Add(category.ShortCode);
+                    check = false;
+                }
+                else
+                {
+
+
+
+                    allCode.ForEach((e) => { if (e == category.ShortCode) { found = true; } });
+
+
+
+                    //string result = allCode.First((string code) => code == category.ShortCode);
+                    if (found == true)
+                    {
+                        Console.WriteLine("code already exist!! enter new");
+                        allCode.Remove(category.ShortCode);
+                        category.ShortCode = Console.ReadLine();
+
+                    }
+                    else
+                    {
+                        allCode.Add(category.ShortCode);
+                        check = false;
+                    }
+                }
+            }
+
            
+
             Console.WriteLine("Please enter description: ");
             while (category.Description.Length < 1)
             {
@@ -157,6 +196,41 @@ namespace ProductCatalog
             {
                 Console.WriteLine("short code is a required field and must be max of 4 characters");
                 product.ShortCode = Console.ReadLine();
+            }
+            Boolean check = true;
+            while (check)
+            {
+
+
+                Boolean found = false;
+                if (allCode.Count == 0)
+                {
+                    allCode.Add(product.ShortCode);
+                    check = false;
+                }
+                else
+                {
+
+
+
+                    allCode.ForEach((e) => { if (e == product.ShortCode) { found = true; } });
+
+
+
+                    //string result = allCode.First((string code) => code == category.ShortCode);
+                    if (found == true)
+                    {
+                        Console.WriteLine("code already exist!! enter new");
+                        allCode.Remove(product.ShortCode);
+                        product.ShortCode = Console.ReadLine();
+
+                    }
+                    else
+                    {
+                        allCode.Add(product.ShortCode);
+                        check = false;
+                    }
+                }
             }
 
             Console.WriteLine("Please enter description: ");

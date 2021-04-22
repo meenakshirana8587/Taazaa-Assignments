@@ -11,6 +11,7 @@ namespace ProductCatalog
         //public string ShortCode { get; set; }
 
         //public string Description { get; set; }
+        public static List<string> allCode;
 
         public static int catId;
         public Category( )
