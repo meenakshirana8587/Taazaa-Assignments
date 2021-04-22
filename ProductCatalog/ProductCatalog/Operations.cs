@@ -24,14 +24,26 @@ namespace ProductCatalog
             Console.WriteLine(" Id : " + category.Id + "\t");
             
             Console.WriteLine("Please enter category name: ");
-            category.Name = Console.ReadLine();
+            while (category.Name.Length < 1)
+            {
+                Console.WriteLine("name is a required field ");
+                category.Name = Console.ReadLine();
+            }
             
             
             Console.WriteLine("Please enter a Shortcode for the category(max 4 characters): ");
-            category.ShortCode = Console.ReadLine();
+            while (category.ShortCode.Length < 1  || category.ShortCode.Length > 4)
+            {
+                Console.WriteLine("short code is a required field and must be max of 4 characters");
+                category.ShortCode = Console.ReadLine();
+            }
            
             Console.WriteLine("Please enter description: ");
-            category.Description = Console.ReadLine();
+            while (category.Description.Length < 1)
+            {
+                Console.WriteLine("description is a required field ");
+                category.Description = Console.ReadLine();
+            }
 
 
             Categories.Add(category);
@@ -132,21 +144,42 @@ namespace ProductCatalog
             Console.WriteLine(" Id : " + product.Id + "\t");
 
             Console.WriteLine("Please enter product name: ");
-            product.Name = Console.ReadLine();
+
+            while (product.Name.Length < 1)
+            {
+                Console.WriteLine("name is a required field ");
+                product.Name = Console.ReadLine();
+            }
 
 
             Console.WriteLine("Please enter a Shortcode for the product(max 4 characters): ");
-            product.ShortCode = Console.ReadLine();
+            while (product.ShortCode.Length < 1 || product.ShortCode.Length > 4)
+            {
+                Console.WriteLine("short code is a required field and must be max of 4 characters");
+                product.ShortCode = Console.ReadLine();
+            }
 
             Console.WriteLine("Please enter description: ");
-            product.Description = Console.ReadLine();
+            while (product.Description.Length < 1)
+            {
+                Console.WriteLine("description is a required field ");
+                product.Description = Console.ReadLine();
+            }
 
 
             Console.WriteLine("Please enter product manufacturer: ");
-            product.Manufacturer = Console.ReadLine();
+            while (product.Manufacturer.Length < 1)
+            {
+                Console.WriteLine("manufacturer is a required field ");
+                product.Manufacturer = Console.ReadLine();
+            }
 
             Console.WriteLine("Please enter product price: ");
-            product.SellingPrice = Convert.ToInt32(Console.ReadLine());
+            while (product.SellingPrice < 1)
+            {
+                Console.WriteLine("price must be  greater than 0 ");
+                product.SellingPrice = Convert.ToInt32(Console.ReadLine());
+            }
 
 
             product.Categories = new List<Category>();
@@ -242,6 +275,15 @@ namespace ProductCatalog
             }
 
 
+        }
+
+        public void required(string s)
+        {
+            if(s==" ")
+            {
+                Console.WriteLine("this field is required");
+
+            }
         }
         
 

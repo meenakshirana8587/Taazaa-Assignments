@@ -7,7 +7,7 @@ namespace ProductCatalog
 
     public class UserInputs
     {
-        public int selectAnOption()
+        public int selectAnOption()//user willl select one from the three options by inputting the number.
         {
 
             Console.WriteLine("Please Select An Option");
@@ -28,7 +28,7 @@ namespace ProductCatalog
             
         }
 
-        public int selectInCategory()
+        public int selectInCategory()//if in the above method, user inputs 1
         {
             Console.Write("1. Enter a Category \t");
             Console.Write("2. List all Categories \t");
@@ -45,12 +45,12 @@ namespace ProductCatalog
         }
 
 
-        public int selectInProduct()
+        public int selectInProduct()//if in the above method, user inputs 2
         {
             Console.Write("1. Enter a Product \t");
             Console.Write("2. List all Products \t");
             Console.Write("3. Delete a product \t");
-            Console.Write("4. Search a product \t");
+            Console.WriteLine("4. Search a product \t");
             
            
             Console.WriteLine("Enter a number from above menu");

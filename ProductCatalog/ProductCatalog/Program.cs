@@ -31,7 +31,7 @@ namespace ProductCatalog
                 }
                 else if(op==3)
                 {
-                    Environment.Exit(1);
+                    Environment.Exit(1);//to exit the operation
                 }
             }
 
