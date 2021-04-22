@@ -62,10 +62,7 @@ namespace ProductCatalog
             return value;
         }
 
-        public void exitApp()
-        {
-
-        }
+        
 
 
 

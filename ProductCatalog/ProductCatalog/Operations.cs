@@ -13,20 +13,7 @@ namespace ProductCatalog
 
         public static List<Category> Categories = new List<Category>();
         public static List<Product> Products = new List<Product>();
-       
-            
-
-
-
-
-        
-        
-
-        
-
-        
-
-        public void AddCategory()
+         public void AddCategory()
         {
 
 
@@ -72,10 +59,26 @@ namespace ProductCatalog
 
         public void DeleteCategory()
         {
-            Console.WriteLine("Enter category id to delete the category");
-            int id = Convert.ToInt32(Console.ReadLine());
-            
-            Categories.RemoveAt(id-1);
+            Console.WriteLine("Please select an option to delete");
+            Console.Write("1. detete by Id\t");
+            Console.WriteLine("2. delete by Short Code\t");
+            Console.WriteLine(" ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+            if (choice == 1)
+            {
+                Console.WriteLine("Enter product id to delete the category");
+                int id = Convert.ToInt32(Console.ReadLine());
+
+                Categories.RemoveAt(id - 1);
+            }
+            else if (choice == 2)
+            {
+                Console.WriteLine("Enter product short code to delete the category");
+                string shortcode = Console.ReadLine();
+                var categorytoremove = Categories.Single(r => r.ShortCode == shortcode);
+                Categories.Remove(categorytoremove);
+            }
 
         }
 
@@ -115,10 +118,7 @@ namespace ProductCatalog
 
 
         }
-        public void exitCategory()
-        {
-            
-        }
+       
 
 
         public void AddProduct()
@@ -166,16 +166,6 @@ namespace ProductCatalog
 
 
             Products.Add(product);
-
-
-
-
-
-
-
-            
-
-
         }
         public void ListAllProducts()
         {
@@ -187,17 +177,33 @@ namespace ProductCatalog
                 item.Categories.ForEach(c => {
                     s += c.Name + ", ";
                 });
-                Console.WriteLine(item.Id + "\t\t" + item.Name + "\t\t" + item.ShortCode + "\t\t\t" + item.Description + "\t\t\t" + item.Manufacturer + "\t\t" + item.SellingPrice + "\t\t" + s);
+                Console.WriteLine(item.Id + "\t\t" + item.Name + "\t\t" + item.ShortCode + "\t\t\t" + item.Description + "\t\t\t" + item.Manufacturer + "\t\t\t" + item.SellingPrice + "\t\t" + s);
 
             }
             );
         }
         public void DeleteProduct()
         {
-            Console.WriteLine("Enter product id to delete the product");
-            int id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please select an option to delete");
+            Console.Write("1. delete by Id\t");
+            Console.WriteLine("2. delete by Short Code\t");
+            Console.WriteLine(" ");
 
-            Products.RemoveAt(id - 1);
+            int choice = Convert.ToInt32(Console.ReadLine());
+            if (choice == 1)
+            {
+                Console.WriteLine("Enter product id to delete the product");
+                int id = Convert.ToInt32(Console.ReadLine());
+
+                Products.RemoveAt(id - 1);
+            }
+            else if (choice == 2)
+            {
+                Console.WriteLine("Enter product short code to delete the product");
+                string shortcode = Console.ReadLine();
+                var producttoremove = Products.Single(r => r.ShortCode == shortcode);
+                Products.Remove(producttoremove);
+            }
 
         }
 
@@ -237,10 +243,7 @@ namespace ProductCatalog
 
 
         }
-        public void exitProduct()
-        {
-           
-        }
+        
 
     }
 }
