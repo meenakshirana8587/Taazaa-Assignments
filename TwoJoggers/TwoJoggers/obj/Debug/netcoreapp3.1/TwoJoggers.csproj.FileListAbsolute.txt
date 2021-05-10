@@ -1,0 +1,13 @@
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\bin\Debug\netcoreapp3.1\TwoJoggers.exe
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\bin\Debug\netcoreapp3.1\TwoJoggers.deps.json
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\bin\Debug\netcoreapp3.1\TwoJoggers.runtimeconfig.json
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\bin\Debug\netcoreapp3.1\TwoJoggers.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\bin\Debug\netcoreapp3.1\TwoJoggers.dll
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\bin\Debug\netcoreapp3.1\TwoJoggers.pdb
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\obj\Debug\netcoreapp3.1\TwoJoggers.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\obj\Debug\netcoreapp3.1\TwoJoggers.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\obj\Debug\netcoreapp3.1\TwoJoggers.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\obj\Debug\netcoreapp3.1\TwoJoggers.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\obj\Debug\netcoreapp3.1\TwoJoggers.dll
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\obj\Debug\netcoreapp3.1\TwoJoggers.pdb
+C:\Users\lenovo\source\repos\TwoJoggers\TwoJoggers\obj\Debug\netcoreapp3.1\TwoJoggers.genruntimeconfig.cache
