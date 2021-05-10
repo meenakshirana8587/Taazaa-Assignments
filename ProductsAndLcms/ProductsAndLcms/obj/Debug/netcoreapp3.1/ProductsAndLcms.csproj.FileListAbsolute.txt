@@ -1,0 +1,13 @@
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\bin\Debug\netcoreapp3.1\ProductsAndLcms.exe
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\bin\Debug\netcoreapp3.1\ProductsAndLcms.deps.json
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\bin\Debug\netcoreapp3.1\ProductsAndLcms.runtimeconfig.json
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\bin\Debug\netcoreapp3.1\ProductsAndLcms.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\bin\Debug\netcoreapp3.1\ProductsAndLcms.dll
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\bin\Debug\netcoreapp3.1\ProductsAndLcms.pdb
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\obj\Debug\netcoreapp3.1\ProductsAndLcms.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\obj\Debug\netcoreapp3.1\ProductsAndLcms.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\obj\Debug\netcoreapp3.1\ProductsAndLcms.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\obj\Debug\netcoreapp3.1\ProductsAndLcms.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\obj\Debug\netcoreapp3.1\ProductsAndLcms.dll
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\obj\Debug\netcoreapp3.1\ProductsAndLcms.pdb
+C:\Users\lenovo\source\repos\ProductsAndLcms\ProductsAndLcms\obj\Debug\netcoreapp3.1\ProductsAndLcms.genruntimeconfig.cache
