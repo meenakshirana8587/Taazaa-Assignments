@@ -1,0 +1,13 @@
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\bin\Debug\netcoreapp3.1\deleteNth.exe
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\bin\Debug\netcoreapp3.1\deleteNth.deps.json
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\bin\Debug\netcoreapp3.1\deleteNth.runtimeconfig.json
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\bin\Debug\netcoreapp3.1\deleteNth.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\bin\Debug\netcoreapp3.1\deleteNth.dll
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\bin\Debug\netcoreapp3.1\deleteNth.pdb
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\obj\Debug\netcoreapp3.1\deleteNth.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\obj\Debug\netcoreapp3.1\deleteNth.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\obj\Debug\netcoreapp3.1\deleteNth.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\obj\Debug\netcoreapp3.1\deleteNth.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\obj\Debug\netcoreapp3.1\deleteNth.dll
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\obj\Debug\netcoreapp3.1\deleteNth.pdb
+C:\Users\lenovo\source\repos\deleteNth\deleteNth\obj\Debug\netcoreapp3.1\deleteNth.genruntimeconfig.cache
