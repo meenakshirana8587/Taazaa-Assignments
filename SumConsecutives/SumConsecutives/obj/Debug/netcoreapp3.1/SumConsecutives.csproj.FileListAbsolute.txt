@@ -1,0 +1,13 @@
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\bin\Debug\netcoreapp3.1\SumConsecutives.exe
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\bin\Debug\netcoreapp3.1\SumConsecutives.deps.json
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\bin\Debug\netcoreapp3.1\SumConsecutives.runtimeconfig.json
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\bin\Debug\netcoreapp3.1\SumConsecutives.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\bin\Debug\netcoreapp3.1\SumConsecutives.dll
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\bin\Debug\netcoreapp3.1\SumConsecutives.pdb
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\obj\Debug\netcoreapp3.1\SumConsecutives.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\obj\Debug\netcoreapp3.1\SumConsecutives.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\obj\Debug\netcoreapp3.1\SumConsecutives.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\obj\Debug\netcoreapp3.1\SumConsecutives.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\obj\Debug\netcoreapp3.1\SumConsecutives.dll
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\obj\Debug\netcoreapp3.1\SumConsecutives.pdb
+C:\Users\lenovo\source\repos\SumConsecutives\SumConsecutives\obj\Debug\netcoreapp3.1\SumConsecutives.genruntimeconfig.cache
